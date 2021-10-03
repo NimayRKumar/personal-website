@@ -1,0 +1,67 @@
+body, html{
+	height: 100%;
+	margin: 0;
+}
+canvas{
+	background: black;
+	height: 100%;
+	width: 100%;
+    transition: background-color 1s ease-out;
+}
+
+#canvas-wrap { 
+    position:relative 
+} /* Make this a positioned parent */
+#overlay { 
+    position:absolute;
+    top:20px; 
+    left:30px; 
+}
+#fadeout {
+  opacity: 1;
+  transition: 1s opacity;
+  text-align: center;
+  font-size:24px;
+  color: white;
+  font-family: 'Dosis';
+}
+
+p {
+  text-align: center;
+}
+
+.visuallyhidden{
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;	
+    border-radius: 50%; /*the magic*/
+
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+    border-radius: 50%; /*the magic*/
+
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+

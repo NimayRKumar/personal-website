@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Circles</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+	<script type="text/javascript" src="assets/js/lib/paper-full.js">
+	</script>
+	<script type="text/javascript" src="assets/js/lib/howler.js"></script>
+
+	<script type="text/paperscript" canvas="myCanvas">
+
+
+		var text = new PointText(new Point(view.size.width/2, view.size.height/2));
+		text.justification = 'center';
+		text.fillColor = 'white';
+		text.fontSize = 40;
+		text.fontFamily = 'Dosis';
+		text.content = 'Press any key a - z or space, turn your sound up, and relax!';
+
+
+	var m1 = 'newsounds/melody/bubbles.mp3';
+
+	var m2 = 'newsounds/melody/marimba_cmaj7.wav';
+
+	var m3 = 'newsounds/melody/particles_cmaj7_and_gmaj7.wav';
+
+	var m4 = 'newsounds/melody/harp_bmin.wav';
+
+	var m5 = 'newsounds/melody/piano_cmaj7.wav';
+
+	var m6 = 'newsounds/melody/piano_fmaj7.wav';
+
+	var m7 = 'newsounds/melody/Smooth.wav';
+
+	var m8 = 'newsounds/melody/strhodes_Fmaj7.wav';
+
+	var m9 = 'newsounds/melody/strings_fmaj7.wav';
+
+	var m10 = 'newsounds/melody/waterdrop.wav';
+
+	var m11 = 'newsounds/melody/wobble.wav';
+
+	var m12 = 'newsounds/melody/clay.mp3';
+
+	var m13 = 'newsounds/melody/chimes.wav';
+
+	var m14 = 'newsounds/melody/bells_cmaj.wav';
+
+	var m15 = 'newsounds/melody/stars_cmaj.wav';
+
+	var m16 = 'newsounds/melody/stars_fmaj.wav';
+
+	var m17 = 'newsounds/melody/stars_gmaj.wav';
+
+	var m18 = 'sounds/moon.mp3';
+
+
+
+	var k1 = 'newsounds/kit/Cymbal13.wav';
+
+	var k2 = 'newsounds/kit/Hihat1.wav';
+
+	var k3 = 'newsounds/kit/Hihat10.wav';
+
+	var k4 = 'newsounds/kit/Kick5.wav';
+
+	var k5 = 'newsounds/kit/Perc2.wav';
+
+	var k6 = 'newsounds/kit/TSClap5.wav';
+
+	var k7 = 'newsounds/kit/openhat.wav';
+
+
+
+	var r1 = 'newsounds/rhythm/Chant.wav';
+
+	var r2 = 'newsounds/rhythm/diesel.m4a';
+
+	var r3 = 'newsounds/rhythm/MusicBox.wav';
+
+	var r4 = 'newsounds/rhythm/OlSchool.wav';
+
+	var r5 = 'newsounds/rhythm/Onigiri.wav';
+
+	var r6 = 'newsounds/rhythm/Ride.wav';
+
+	var r7 = 'newsounds/rhythm/Zip.wav';
+
+
+
+
+
+	var circles = [];
+
+	var keyData = {
+
+		q: {
+
+			sound: new Howl({
+
+			  src: [m16]
+
+			}),
+
+			color: '#1abc9c'
+
+		},
+
+		w: {
+
+			sound: new Howl({
+
+			  src: [m2]
+
+			}),
+
+			color: '#2ecc71'
+
+		},
+
+		e: {
+
+			sound: new Howl({
+
+			  src: [m7]
+
+			}),
+
+			color: '#3498db'
+
+		},
+
+		r: {
+
+			sound: new Howl({
+
+			  src: [m9]
+
+			}),
+
+			color: '#9b59b6'
+
+		},
+
+		t: {
+
+			sound: new Howl({
+
+			  src: [m12]
+
+			}),
+
+			color: '#34495e'
+
+		},
+
+		y: {
+
+			sound: new Howl({
+
+			  src: [m13]
+
+			}),
+
+			color: '#16a085'
+
+		},
+
+		u: {
+
+			sound: new Howl({
+
+			  src: [k2]
+
+			}),
+
+			color: '#27ae60'
+
+		},
+
+		i: {
+
+			sound: new Howl({
+
+			  src: [k3]
+
+			}),
+
+			color: '#2980b9'
+
+		},
+
+		o: {
+
+			sound: new Howl({
+
+			src: [r5]
+
+			}),
+
+			color: '#8e44ad'
+
+		},
+
+		p: {
+
+			sound: new Howl({
+
+			  src: [r3]
+
+			}),
+
+			color: '#2c3e50'
+
+		},
+
+		a: {
+
+			sound: new Howl({
+
+			  src: [m17]
+
+			}),
+
+			color: '#f1c40f'
+
+		},
+
+		s: {
+
+			sound: new Howl({
+
+			  src: [m11]
+
+			}),
+
+			color: '#e67e22'
+
+		},
+
+		d: {
+
+			sound: new Howl({
+
+			  src: [m4]
+
+			}),
+
+			color: '#e74c3c'
+
+		},
+
+		f: {
+
+			sound: new Howl({
+
+			  src: [m5]
+
+			}),
+
+			color: '#95a5a6'
+
+		},
+
+		g: {
+
+			sound: new Howl({
+
+			  src: [m1]
+
+			}),
+
+			color: '#f39c12'
+
+		},
+
+		h: {
+
+			sound: new Howl({
+
+			  src: [r2]
+
+			}),
+
+			color: '#d35400'
+
+		},
+
+		j: {
+
+			sound: new Howl({
+
+			  src: [k5]
+
+			}),
+
+			color: '#1abc9c'
+
+		},
+
+		k: {
+
+			sound: new Howl({
+
+			  src: [k4]
+
+			}),
+
+			color: '#2ecc71'
+
+		},
+
+		l: {
+
+			sound: new Howl({
+
+			  src: [r4]
+
+			}),
+
+			color: '#3498db'
+
+		},
+
+		z: {
+
+			sound: new Howl({
+
+			  src: [m15]
+
+			}),
+
+			color: '#9b59b6'
+
+		},
+
+		x: {
+
+			sound: new Howl({
+
+			  src: [m3]
+
+			}),
+
+			color: '#34495e'
+
+		},
+
+		c: {
+
+			sound: new Howl({
+
+			  src: [m8]
+
+			}),
+
+			color: '#16a085'
+
+		},
+
+		v: {
+
+			sound: new Howl({
+
+			  src: [m6]
+
+			}),
+
+			color: '#27ae60'
+
+		},
+
+		b: {
+
+			sound: new Howl({
+
+			  src: [m14]
+
+			}),
+
+			color: '#2980b9'
+
+		},
+
+		n: {
+
+			sound: new Howl({
+
+			src: [m10]
+
+			}),
+
+			color: '#8e44ad'
+
+		},
+
+		m: {
+
+			sound: new Howl({
+
+			  src: [k7]
+
+			}),
+
+			color: '#2c3e50'
+
+		}
+
+	}
+		// var sound = new Howl({
+		// 	src: ['sounds/bubbles.mp3']
+		// })
+		var count = 150;
+		var path = new Path.Circle({
+		center: [0, 0],
+		radius: 10,
+		fillColor: 'purple',
+		strokeColor: 'black'
+		});
+
+		var symbol = new Symbol(path);
+
+		for (var i = 0; i < count; i++) {
+
+			var center = Point.random() * view.size;
+			var placedSymbol = symbol.place(center);
+			placedSymbol.scale(i / count);
+		}
+
+		var colors = ['Black', 'SlateGrey', 'MediumTurquoise', 'DarkSalmon', 'PaleGreen'];
+		var bgnum = 0;
+
+		function changeColor(){
+	  		var el = document.getElementById("myCanvas");
+	  		console.log(el);
+	  		el.style.backgroundColor = colors[bgnum];
+	  		//document.body.style.background = colors[bgnum];
+		}
+
+		function onKeyDown(event){
+			if(event.key == 'space'){
+				//console.log('worked!');
+				bgnum = (bgnum + 1) % colors.length;
+				changeColor();
+			}
+
+			if(keyData[event.key]){
+				var maxPoint = new Point(view.size.width, view.size.height);
+				var randomPoint = Point.random();
+				var point = maxPoint * randomPoint;
+				keyData[event.key].sound.play();
+				var newCircle = new Path.Circle(new Point(point), 150);
+				newCircle.fillColor = keyData[event.key].color;
+				circles.push(newCircle);
+			}
+		}
+
+		function onFrame(event){
+
+
+			for (var i = 0; i <= count; i++) {
+				var item = project.activeLayer.children[i];
+				if (item != text){
+					item.position.x += item.bounds.width / 20;
+				}
+				path.fillColor.hue += .005;
+				if (item.bounds.left > view.size.width) {
+					item.position.x = -item.bounds.width;
+				}
+			}
+			text.opacity *= 0.995;
+
+			for(var i = 0; i < circles.length; i++){
+				circles[i].scale(0.90);
+		    	//console.log(circles[i])
+		    	if(circles[i].area < 1){
+		      		circles[i].remove();
+		     		circles.splice(i, 1);
+		      		i--;
+		      		//console.log(circles);
+		    	}
+
+		  	}
+		}
+	</script>
+
+</head>
+<body>
+ 	<canvas id="myCanvas" resize></canvas>
+
+</body>
+</html>
