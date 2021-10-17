@@ -1,20 +1,4 @@
 import React from 'react'
-import styled from 'styled-components'
-
-const Text = styled.p`
-margin-top: 0px;
-margin-bottom: 43px;
-font-family: 'book';
-font-weight: normal;
-color: #4F4F4F;
-font-size: 14px;
-text-align: left;
-margin-bottom: 30px;
-@media (min-width: 1024px) {
-    margin-bottom: 43px;
-    font-size: 16px;
-}
-`
 
 const About = () => {
 

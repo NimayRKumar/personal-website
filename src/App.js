@@ -3,6 +3,10 @@ import Navbar from './components/Navbar/Navbar'
 import './App.css';
 import About from './components/About/About'
 import Experience from './components/Exp/Experience'
+import Projects from './components/Projects/Projects'
+import Education from './components/Education/Education'
+import Skills from './components/Skills/Skills'
+
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
 class App extends Component {
@@ -14,6 +18,9 @@ class App extends Component {
           <Navbar/>
           <Route path='/about' component={About}/>
           <Route path='/exp' component={Experience}/>
+          <Route path='/projects' component={Projects}/>
+          <Route path='/education' component={Education}/>
+          <Route path='/skills' component={Skills}/>
         </div>
       </Router>
     )
