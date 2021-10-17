@@ -30,7 +30,6 @@ class Navbar extends React.Component {
                         )
                     })}
                 </ul>
-                <Button>Contact</Button>
             </nav>
         )
     }
