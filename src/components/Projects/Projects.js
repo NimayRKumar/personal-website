@@ -1,6 +1,9 @@
 import React from 'react'
+import useStyles from '/Users/kumar/Desktop/personal-website/src/components/Styles/CenterStyles'
 
 const Projects = () => {
+
+    const styles = useStyles()
 
     return (
         <div>
@@ -19,7 +22,7 @@ const Projects = () => {
             <br/>
 
             <h3>Basketball Data Analysis</h3>
-            <p>A few friends and I decided to look into the official NBA 2014-2015 shot log data in order to investigate the “Hot Hand” phenomenon. What was most fun about this project was applying my knowledge of data science to contribute without being a sports fan myself! After cleaning the data, we graphed individual players’ performance in 3D heatmaps and clustered them. Combining these clusters and graphs, we visualize player matchups and play styles in force directed graphs. Our Medium article was even highlighted by TowardsData Science as one of the 8 best articles on data visualization in February 2019!</p>
+            <p>A few friends and I decided to look into the official NBA 2014-2015 shot log data in order to investigate the “Hot Hand” phenomenon. What was most fun about this project was applying my knowledge of data science to contribute without being a sports fan myself! After cleaning the data, we graphed individual players’ performance in 3D heatmaps and clustered them. Combining these clusters and graphs, we visualize player matchups and play styles in force directed graphs. Our <a href='https://towardsdatascience.com/insights-from-raw-nba-shot-log-data-and-an-exploration-of-the-hot-hand-phenomenon-1f1c6c63685a' target='_blank'>Medium article</a> was even highlighted by TowardsData Science as one of the 8 best articles on data visualization in February 2019!</p>
         
             <br/>
 

@@ -24,6 +24,7 @@ const Skills = () => {
     ]
 
     const techs = [
+        'Docker',
         'AWS',
         'GCP',
         'Azure',

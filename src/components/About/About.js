@@ -2,7 +2,6 @@ import React from 'react'
 
 const About = () => {
 
-
     return (
         <div>
             <br/>
@@ -18,6 +17,10 @@ const About = () => {
             <br/>
             <p>
             My other passions lie in music! I’ve played the piano for over 12 years, and currently am a left-handed pianist working to overcome focal dystonia. I recently started learning the cello and I compose too. In addition, I love LEGO and occasionally collect the odd Star Wars collector set. A long time ago, I reviewed old and rare LEGO on YouTube!
+            </p>
+            <br/>
+            <p>
+            Here's my <a href='https://youtu.be/B6aejA0ooh0' target='_blank'>rendition</a> of Godowsky's Left-Hand arrangement of Chopin's etude op 10 no 3! Stay tuned for more left hand piano!
             </p>
         </div>
     )
