@@ -1,9 +1,6 @@
 import React from 'react'
-import useStyles from '/Users/kumar/Desktop/personal-website/src/components/Styles/CenterStyles'
 
 const Projects = () => {
-
-    const styles = useStyles()
 
     return (
         <div>
