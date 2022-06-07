@@ -47,12 +47,12 @@ const About = () => {
                 <h2>Interests</h2>
                 <div className={styles.indent}>
                     <b>Music: </b>
-                    I am a huge classical and music theory nerd, and am currently learning the cello & composing. Read more about my musical experiences <a href='/music'>here.</a>
+                    I am a huge classical music and music theory nerd, and am currently learning the cello & composing. I also used to play the piano! Read more about my musical experiences <a href='/music'>here.</a>
                 </div>
                 <div className={styles.indent}>
                     <b>Running & Hiking: </b>
-                    I love running and hiking, and am always looking for new sights to see. I recently completed the Woodlands and RBC Brooklyn Halves, 
-                    and am training for the Philadelphia Full Marathon. Read more about my outdoorsy endeavors <a href='/outdoors'>here.</a>
+                    I love running and hiking, and am always looking for new sights to see. I recently completed the Woodlands and RBC Brooklyn Half Marathons, 
+                    and am training for the Philadelphia Full. Read more about my outdoorsy endeavors <a href='/outdoors'>here.</a>
                 </div>
                 <div className={styles.indent}>
                     <b>Miscellaneous: </b>
