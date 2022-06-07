@@ -44,7 +44,7 @@ const About = () => {
                     My career interest are in machine learning and data science, particularly in medicine and biomedical engineering.
                 </p>
                 <br/>
-                <h2>Interests</h2>
+                <h2>Hobbies</h2>
                 <div className={styles.indent}>
                     <b>Music: </b>
                     I am a huge classical music and music theory nerd, and am currently learning the cello & composing. I also used to play the piano! Read more about my musical experiences <a href='/music'>here.</a>
@@ -56,7 +56,18 @@ const About = () => {
                 </div>
                 <div className={styles.indent}>
                     <b>Miscellaneous: </b>
-                    under construction...
+                    Beyond music and running, I've started dipping my toes into dancing, public speaking (Toastmasters), and cooking.
+                    I am also an unapologetical Better Call Saul fan.
+                </div>
+
+                <h2>Contact</h2>
+                <div className={styles.indent}>
+                    kumar.nimay@yahoo.com
+                </div>
+                <div className={styles.indent}>
+                    <a href="https://www.linkedin.com/in/nimaykumar/">LinkedIn</a>
+                    ,&nbsp;
+                    <a href="https://github.com/NimayRKumar">Github</a>
                 </div>
 
                 <div className={styles.resume}>
