@@ -4,6 +4,17 @@ export const MenuItems = [
         url: '/',
         cName: 'nav-links'
     },
+    /*
+    {
+        title: 'Music',
+        url: '/music',
+        cName: 'nav-links'
+    },
+    {
+        title: 'Running',
+        url: '/outdoors',
+        cName: 'nav-links'
+    },
     {
         title: 'Experience',
         url: '/exp',
@@ -14,7 +25,7 @@ export const MenuItems = [
         url: '/projects',
         cName: 'nav-links'
     },
-    {
+    { 
         title: 'Education',
         url: '/education',
         cName: 'nav-links'
@@ -24,4 +35,5 @@ export const MenuItems = [
         url: '/skills',
         cName: 'nav-links'
     },
+    */
 ]

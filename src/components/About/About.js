@@ -1,28 +1,61 @@
 import React from 'react'
+import { createUseStyles } from 'react-jss'
+
+import { profile } from './Base64'
+
+const useStyles = createUseStyles({
+    outer: {
+        margin: 'auto',
+        padding: '10px',
+        width: '70%',
+    },
+    inner: {
+        padding: '5px 0px',
+        display: 'inline'
+    },
+    profile: {
+        borderRadius: '50%'
+    },
+    indent: {
+        paddingLeft: '25px',
+        padding: '5px'
+    }
+})
 
 const About = () => {
+    const styles = useStyles()
 
     return (
-        <div>
-            <br/>
-            <h1>About Me</h1>
-            <br/>
-            <p>
-                Hey, I'm Nimay! I graduated in 2020 from The University of Texas at Austin with a B.S. in Electrical & Computer Engineering and a minor in Business.
-            </p>
-            <br/>
-            <p>
-                At UT, I specialized in software engineering, machine learning, and data science. Some of my most memorable experiences include placing at HackTX and winning the security challenge with an audio recognition tool, and making an iOS app for virtual LEGO instructions using Augmented Reality. I currently work at IPT Global as a full stack Software Engineer.
-            </p>
-            <br/>
-            <p>
-            My other passions lie in music! I’ve played the piano for over 12 years, and currently am a left-handed pianist working to overcome focal dystonia. I recently started learning the cello and I compose too. In addition, I love LEGO and occasionally collect the odd Star Wars collector set. A long time ago, I reviewed old and rare LEGO on YouTube!
-            </p>
-            <br/>
-            <p>
-            Here's my <a href='https://youtu.be/B6aejA0ooh0' target='_blank'>rendition</a> of Godowsky's Left-Hand arrangement of Chopin's etude op 10 no 3! Stay tuned for more left hand piano!
-            </p>
-        </div>
+        <>
+            <div align='center'>
+                <img src={profile} className={styles.profile}/>
+                <h1><big>Nimay Kumar</big></h1>
+            </div>
+
+            <div className={styles.outer}>
+                <h2>About Me</h2>
+                <p>I'm currently a software engineer at the <a href="https://ritchielab.org/"> Ritchie Lab </a>
+                    and an incoming MSE in Data Science student at University of Pennsylvania!
+                    I did my undergrad in Electrical & Computer Engineering at the University of Texas at Austin.
+                    My career interest are in machine learning and data science, particularly in medicine and biomedical engineering.
+                </p>
+                <br/>
+                <h2>Interests</h2>
+                <div className={styles.indent}>
+                    <b>Music: </b>
+                    I am a huge classical and music theory nerd, and am currently learning the cello & composing. Read more about my musical experiences <a href='/music'>here.</a>
+                </div>
+                <div className={styles.indent}>
+                    <b>Running & Hiking: </b>
+                    I love running and hiking, and am always looking for new sights to see. I recently completed the Woodlands and RBC Brooklyn Halves, 
+                    and am training for the Philadelphia Full Marathon. Read more about my outdoorsy endeavors <a href='/outdoors'>here.</a>
+                </div>
+                <div className={styles.indent}>
+                    <b>Miscellaneous: </b>
+                </div>
+            </div>
+
+        </>
     )
 }
 
