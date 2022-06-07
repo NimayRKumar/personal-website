@@ -1,5 +1,6 @@
 import React from 'react'
 import { createUseStyles } from 'react-jss'
+import { Button } from 'react-bootstrap'
 
 import { profile } from './Base64'
 
@@ -19,6 +20,9 @@ const useStyles = createUseStyles({
     indent: {
         paddingLeft: '25px',
         padding: '5px'
+    },
+    resume: {
+        textAlign: 'center'
     }
 })
 
@@ -52,6 +56,18 @@ const About = () => {
                 </div>
                 <div className={styles.indent}>
                     <b>Miscellaneous: </b>
+                    under construction...
+                </div>
+
+                <div className={styles.resume}>
+                    <p>
+                        <a 
+                            href="https://drive.google.com/file/d/19e6olmDTpnHBPu14-yjL_cHfee-k0Rk3/view?usp=sharing"
+                            target="_blank"
+                        >
+                            Resume
+                        </a>
+                    </p>
                 </div>
             </div>
 
