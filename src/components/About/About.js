@@ -57,7 +57,7 @@ const About = () => {
                 <div className={styles.indent}>
                     <b>Miscellaneous: </b>
                     Beyond music and running, I've started dipping my toes into dancing, public speaking (Toastmasters), and cooking.
-                    I am also an unapologetical Better Call Saul fan.
+                    I am also an unapologetic Better Call Saul fan.
                 </div>
 
                 <h2>Contact</h2>

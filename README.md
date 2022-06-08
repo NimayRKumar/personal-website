@@ -1,3 +1,3 @@
 ## nimaykumar.com
 
-### personal website
+personal website
