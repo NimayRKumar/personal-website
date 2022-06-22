@@ -73,7 +73,7 @@ const About = () => {
                 <div className={styles.resume}>
                     <p>
                         <a 
-                            href="https://drive.google.com/file/d/19e6olmDTpnHBPu14-yjL_cHfee-k0Rk3/view?usp=sharing"
+                            href="https://drive.google.com/file/d/18q_oikMQhTQNiavJYZYtnVCRuCur2DVc/view?usp=sharing"
                             target="_blank"
                         >
                             Resume
