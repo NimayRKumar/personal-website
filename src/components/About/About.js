@@ -1,6 +1,5 @@
 import React from 'react'
 import { createUseStyles } from 'react-jss'
-import { Button } from 'react-bootstrap'
 
 import { profile } from './Base64'
 
@@ -47,7 +46,7 @@ const About = () => {
                 <h2>Hobbies</h2>
                 <div className={styles.indent}>
                     <b>Music: </b>
-                    I am a huge classical music and music theory nerd, and am currently learning the cello & composing. I also used to play the piano! Read more about my musical experiences <a href='/music'>here.</a>
+                    I am a huge classical music and music theory nerd, and am currently learning the cello & composing. I also play the piano, and used to play alto & bari sax! Read more about my musical experiences <a href='/music'>here.</a>
                 </div>
                 <div className={styles.indent}>
                     <b>Running & Hiking: </b>
@@ -57,7 +56,7 @@ const About = () => {
                 <div className={styles.indent}>
                     <b>Miscellaneous: </b>
                     Beyond music and running, I've started dipping my toes into dancing, public speaking (Toastmasters), and cooking.
-                    I am also an unapologetic Better Call Saul fan.
+                    I'm also unapologetically obsessed with Better Call Saul.
                 </div>
 
                 <h2>Contact</h2>
@@ -81,7 +80,6 @@ const About = () => {
                     </p>
                 </div>
             </div>
-
         </>
     )
 }
