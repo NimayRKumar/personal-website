@@ -39,14 +39,14 @@ const About = () => {
                 <h2>About Me</h2>
                 <p>I'm currently a software engineer at the <a href="https://ritchielab.org/"> Ritchie Lab </a>
                     and an incoming MSE in Data Science student at University of Pennsylvania!
-                    I did my undergrad in Electrical & Computer Engineering at the University of Texas at Austin.
-                    My career interest are in machine learning and data science, particularly in medicine and biomedical engineering.
+                    I did my undergrad in Electrical & Computer Engineering at the University of Texas at Austin, and 
+                    my career interest are in machine learning and data science, particularly in medicine and biomedical engineering.
                 </p>
                 <br/>
                 <h2>Hobbies</h2>
                 <div className={styles.indent}>
                     <b>Music: </b>
-                    I am a huge classical music and music theory nerd, and am currently learning the cello & composing. I also play the piano, and used to play alto & bari sax! Read more about my musical experiences <a href='/music'>here.</a>
+                    I am a huge classical music and music theory nerd, and am currently learning the cello. I also used to play the piano, alto & bari sax! Read more about my musical journey <a href='/music'>here.</a>
                 </div>
                 <div className={styles.indent}>
                     <b>Running & Hiking: </b>
@@ -55,7 +55,7 @@ const About = () => {
                 </div>
                 <div className={styles.indent}>
                     <b>Miscellaneous: </b>
-                    Beyond music and running, I've started dipping my toes into dancing, public speaking (Toastmasters), and cooking.
+                    Beyond music, hiking and running, I've started dipping my toes into dancing.
                     I'm also unapologetically obsessed with Better Call Saul.
                 </div>
 

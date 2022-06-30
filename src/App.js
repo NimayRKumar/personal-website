@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import Navbar from './components/Navbar/Navbar'
+
 import './App.css';
 import About from './components/About/About'
 import Music from './components/Music/Music'
 import Outdoors from './components/Outdoors/Outdoors'
 
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Route } from 'react-router-dom'
 
 class App extends Component {
 
