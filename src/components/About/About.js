@@ -53,11 +53,6 @@ const About = () => {
                     I love running and hiking, and am always looking for new sights to see. I recently completed the Woodlands and RBC Brooklyn Half Marathons, 
                     and am training for the Philadelphia Full. Read more about my outdoorsy endeavors <a href='/outdoors'>here.</a>
                 </div>
-                <div className={styles.indent}>
-                    <b>Miscellaneous: </b>
-                    Beyond music, hiking and running, I've started dipping my toes into dancing.
-                    I'm also unapologetically obsessed with Better Call Saul.
-                </div>
 
                 <h2>Contact</h2>
                 <div className={styles.indent}>
