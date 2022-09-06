@@ -4,7 +4,7 @@ const Music = () => {
 
     return (
         <div>
-            coming soon            
+            Under construction          
         </div>
     )
 

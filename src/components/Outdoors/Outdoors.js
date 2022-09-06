@@ -35,7 +35,7 @@ const Outdoors = () => {
 
     return (
         <>
-            (in progress)
+            Under construction
             <br/>
             <div className={styles.hiking}>
                 <p>welcome to my hiking section</p>  
