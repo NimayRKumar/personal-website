@@ -47,7 +47,8 @@ const About = () => {
                 <h2>Hobbies</h2>
                 <div className={styles.indent}>
                     <b>Music: </b>
-                    I am a huge classical music and music theory nerd, and am currently learning the cello. I also used to play the piano, alto & bari sax! Read more about my musical journey <a href='/music'>here.</a>
+                    I am a huge classical music and music theory nerd, and am currently learning the cello and playing in the <a href="https://www.pennmedsymphony.com/"> Penn Med Symphony Orchestra.</a>
+                    I also used to play the piano, alto & bari sax! Read more about my musical journey <a href='/music'>here.</a>
                 </div>
                 <div className={styles.indent}>
                     <b>Running & Hiking: </b>
