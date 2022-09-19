@@ -47,13 +47,12 @@ const About = () => {
                 <h2>Hobbies</h2>
                 <div className={styles.indent}>
                     <b>Music: </b>
-                    I am a huge classical music and music theory nerd, and am currently learning the cello and playing in the <a href="https://www.pennmedsymphony.com/"> PMSO.</a>
+                    I am a huge classical music and music theory nerd, and am currently learning the cello.
                     I also used to play the piano, alto & bari sax.
                 </div>
                 <div className={styles.indent}>
                     <b>Running & Hiking: </b>
-                    I love running and hiking, and am always looking for new sights to see. I recently completed the Woodlands and RBC Brooklyn, and PDR Half Marathons, 
-                    and am training for the Philadelphia Full.
+                    I love running and hiking, and am always looking for new challenges. My next goal is to complete the Philadelphia Full Marathon.
                 </div>
                 <div className={styles.indent}>
                     <b>Miscellaneous: </b>
