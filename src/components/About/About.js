@@ -41,19 +41,19 @@ const About = () => {
                 <p>I'm currently a developer for the <a href="https://ritchielab.org/"> Ritchie Lab </a>
                     and an MSE in Data Science student at University of Pennsylvania.
                     I did my undergrad in Electrical & Computer Engineering at the University of Texas at Austin, and 
-                    my career interest are in machine learning and data science, particularly in medicine and bioinformatics.
+                    my career interest are in machine learning, particularly in medicine and bioinformatics.
                 </p>
                 <br/>
                 <h2>Hobbies</h2>
                 <div className={styles.indent}>
                     <b>Music: </b>
-                    I am a huge classical music and music theory nerd, and am currently learning the cello and playing in the <a href="https://www.pennmedsymphony.com/"> Penn Med Symphony Orchestra.</a>
-                    I also used to play the piano, alto & bari sax! Read more about my musical journey <a href='/music'>here.</a>
+                    I am a huge classical music and music theory nerd, and am currently learning the cello and playing in the <a href="https://www.pennmedsymphony.com/"> PMSO.</a>
+                    I also used to play the piano, alto & bari sax.
                 </div>
                 <div className={styles.indent}>
                     <b>Running & Hiking: </b>
-                    I love running and hiking, and am always looking for new sights to see. I recently completed the Woodlands and RBC Brooklyn Half Marathons, 
-                    and am training for the Philadelphia Full. Read more about my outdoorsy endeavors <a href='/outdoors'>here.</a>
+                    I love running and hiking, and am always looking for new sights to see. I recently completed the Woodlands and RBC Brooklyn, and PDR Half Marathons, 
+                    and am training for the Philadelphia Full.
                 </div>
                 <div className={styles.indent}>
                     <b>Miscellaneous: </b>
@@ -73,7 +73,7 @@ const About = () => {
                 <div className={styles.resume}>
                     <p>
                         <a 
-                            href="https://drive.google.com/file/d/1W8ntD2LEJYBgC59cyB0U-gKDZn_qTZPD/view?usp=sharing"
+                            href="https://drive.google.com/file/d/1RJcR_XmkR0s9SdgEvvqM5MrUwTYyaFo1/view?usp=sharing"
                             target="_blank"
                         >
                             Resume
