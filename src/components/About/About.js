@@ -47,25 +47,24 @@ const About = () => {
                 <h2>Hobbies</h2>
                 <div className={styles.indent}>
                     <b>Music: </b>
-                    I am a huge classical music and music theory nerd, and am currently 
-                    learning cello and playing in Penn's Medical Symphony. I also used to play alto & bari sax and piano. 
+                    I am a huge classical music and music theory nerd, and am currently learning cello
+                    and playing in Penn's Medical Symphony. I also used to piano, and alto & bari sax. 
                     
-                    Here's my <a href="https://www.youtube.com/watch?v=B6aejA0ooh0"> take </a> on Chopin's etude Op 10 no 3 arranged for left hand alone by Leopold Godowsky.
+                    Here's my <a href="https://www.youtube.com/watch?v=B6aejA0ooh0"> take </a> on Chopin's etude Op 10/3 arranged for left hand alone by Leopold Godowsky.
                 </div>
                 <div className={styles.indent}>
                     <b>Running & Hiking: </b>
                     I also love running and hiking, and am always looking for new challenges. 
-                    I recently completed the Brooklyn and Philly Distance Run Half Marathons, and am currently training for the Philly Full.
+                    I recently completed the Brooklyn and PDR Half Marathons, and am currently training for the Philadelphia Full.
                 </div>
                 <div className={styles.indent}>
                     <b>Miscellaneous: </b>
-                    I recently started learning Argentine Tango. I'm also also obsessed with Better Call Saul.
+                    I recently started learning Argentine Tango. I'm also obsessed with Better Call Saul.
                 </div>
 
                 <h2>Links</h2>
                 <div className={styles.indent}>
                     <a href="https://www.linkedin.com/in/nimaykumar/">LinkedIn</a>
-                    
                 </div>
                 <div className={styles.indent}>
                     <a href="https://github.com/NimayRKumar">Github</a>
