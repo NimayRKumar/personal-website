@@ -47,32 +47,34 @@ const About = () => {
                 <h2>Hobbies</h2>
                 <div className={styles.indent}>
                     <b>Music: </b>
-                    I am a huge classical music and music theory nerd, and am currently learning the cello.
-                    I also used to play the piano, alto & bari sax.
+                    I am a huge classical music and music theory nerd, and am currently 
+                    learning cello and playing in Penn's Medical Symphony. I also used to play alto & bari sax and piano. 
+                    
+                    Here's my <a href="https://www.youtube.com/watch?v=B6aejA0ooh0"> take </a> on Chopin's etude Op 10 no 3 arranged for left hand alone by Leopold Godowsky.
                 </div>
                 <div className={styles.indent}>
                     <b>Running & Hiking: </b>
-                    I love running and hiking, and am always looking for new challenges. My next goal is to complete the Philadelphia Full Marathon.
+                    I also love running and hiking, and am always looking for new challenges. 
+                    I recently completed the Brooklyn and Philly Distance Run Half Marathons, and am currently training for the Philly Full.
                 </div>
                 <div className={styles.indent}>
                     <b>Miscellaneous: </b>
-                    I'm also obsessed with Better Call Saul. 
+                    I recently started learning Argentine Tango. I'm also also obsessed with Better Call Saul.
                 </div>
 
-                <h2>Contact</h2>
-                <div className={styles.indent}>
-                    kumar.nimay@yahoo.com
-                </div>
+                <h2>Links</h2>
                 <div className={styles.indent}>
                     <a href="https://www.linkedin.com/in/nimaykumar/">LinkedIn</a>
-                    ,&nbsp;
+                    
+                </div>
+                <div className={styles.indent}>
                     <a href="https://github.com/NimayRKumar">Github</a>
                 </div>
 
                 <div className={styles.resume}>
                     <p>
                         <a 
-                            href="https://drive.google.com/file/d/1RJcR_XmkR0s9SdgEvvqM5MrUwTYyaFo1/view?usp=sharing"
+                            href="https://drive.google.com/file/d/1CytiyxDBV4z0N_7PjqlNSF3xxvTYMCM8/view?usp=sharing"
                             target="_blank"
                         >
                             Resume
