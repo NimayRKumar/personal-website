@@ -1,3 +1,3 @@
-## nimaykumar.com
+## nimaykumar.net
 
 personal website
