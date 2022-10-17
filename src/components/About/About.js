@@ -38,24 +38,22 @@ const About = () => {
 
             <div className={styles.outer}>
                 <h2>About Me</h2>
-                <p>I'm currently a developer for the <a href="https://ritchielab.org/"> Ritchie Lab </a>
+                <p>I'm currently a developer for the Ritchie Lab at the Perelman School of Medicine,
                     and an MSE in Data Science student at University of Pennsylvania.
                     I did my undergrad in Electrical & Computer Engineering at the University of Texas at Austin, and 
-                    my career interest are in machine learning, particularly in medicine and bioinformatics.
+                    my career interest are in machine learning.
                 </p>
                 <br/>
                 <h2>Hobbies</h2>
                 <div className={styles.indent}>
                     <b>Music: </b>
                     I am a huge classical music and music theory nerd, and am currently learning cello
-                    and playing in Penn's Medical Symphony. I also used to piano, and alto & bari sax. 
-                    
-                    Here's my <a href="https://www.youtube.com/watch?v=B6aejA0ooh0"> take </a> on Chopin's etude Op 10/3 arranged for left hand alone by Leopold Godowsky.
+                    and playing in Penn's Medical Symphony. I also used to play piano, alto & bari sax. 
                 </div>
                 <div className={styles.indent}>
-                    <b>Running & Hiking: </b>
-                    I also love running and hiking, and am always looking for new challenges. 
-                    I recently completed the Brooklyn and PDR Half Marathons, and am currently training for the Philadelphia Full.
+                    <b>Running: </b>
+                    I love running, especially traveling to new places for races. I recently completed the Brooklyn 
+                    and PDR Half Marathons, and am training for the Philadelphia Marathon, which will be my first full marathon.
                 </div>
                 <div className={styles.indent}>
                     <b>Miscellaneous: </b>
