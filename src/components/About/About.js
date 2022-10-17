@@ -53,7 +53,7 @@ const About = () => {
                 <div className={styles.indent}>
                     <b>Running: </b>
                     I love running, especially traveling to new places for races. I recently completed the Brooklyn 
-                    and PDR Half Marathons, and am training for the Philadelphia Marathon, which will be my first full marathon.
+                    and PDR Half Marathons, and am currently training for my first full- the  Philadelphia Marathon.
                 </div>
                 <div className={styles.indent}>
                     <b>Miscellaneous: </b>
