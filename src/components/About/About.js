@@ -1,7 +1,7 @@
 import React from 'react'
 import { createUseStyles } from 'react-jss'
 
-import { profile4 } from './Base64'
+import pdr from '../../media/pdr.jpg'
 
 const useStyles = createUseStyles({
     outer: {
@@ -14,8 +14,9 @@ const useStyles = createUseStyles({
         display: 'inline'
     },
     profile: {
-        borderRadius: '10%',
-        transform: 'rotate(40deg)'
+        borderRadius: '20%',
+        width: '400',
+        height: '500',
     },
     indent: {
         paddingLeft: '25px',
@@ -32,7 +33,7 @@ const About = () => {
     return (
         <>
             <div align='center'>
-                <img src={profile4} className={styles.profile}/>
+                <img src={pdr} className={styles.profile} width={'500'}/>
                 <h1><big>Nimay Kumar</big></h1>
             </div>
 
@@ -41,7 +42,7 @@ const About = () => {
                 <p>I'm currently a developer for the Ritchie Lab at the Perelman School of Medicine,
                     and an MSE in Data Science student at University of Pennsylvania.
                     I did my undergrad in Electrical & Computer Engineering at the University of Texas at Austin, and 
-                    my career interest are in machine learning.
+                    my career interests are in machine learning.
                 </p>
                 <br/>
                 <h2>Hobbies</h2>
@@ -52,8 +53,8 @@ const About = () => {
                 </div>
                 <div className={styles.indent}>
                     <b>Running: </b>
-                    I love running, especially traveling to new places for races. I recently completed the Brooklyn 
-                    and PDR Half Marathons, and am currently training for my first full- the  Philadelphia Marathon.
+                    I love running and traveling to new places for races. I recently completed the Brooklyn 
+                    and PDR Half Marathons, and am currently training for the Philadelphia Full Marathon.
                 </div>
                 <div className={styles.indent}>
                     <b>Miscellaneous: </b>
