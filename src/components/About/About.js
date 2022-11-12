@@ -58,7 +58,7 @@ const About = () => {
                 </div>
                 <div className={styles.indent}>
                     <b>Miscellaneous: </b>
-                    I recently started learning Argentine Tango. I'm also obsessed with Better Call Saul.
+                    I recently started learning Argentine Tango. I'm also a huge fan of Better Call Saul and Ghibli movies.
                 </div>
 
                 <h2>Links</h2>
