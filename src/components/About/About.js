@@ -54,11 +54,11 @@ const About = () => {
                 <div className={styles.indent}>
                     <b>Running: </b>
                     I love long-distance running and recently completed my first marathon. I 
-		            aim to eventually visit new places all around the world to run races, including the 6 Marathon Majors.
+		            aim to eventually visit new places all around the world to run races & triathlons.
                 </div>
                 <div className={styles.indent}>
                     <b>Miscellaneous: </b>
-                    I'm also a big fan of Better Call Saul.
+                    I recently started learning Argentine Tango. I'm also a huge fan of Better Call Saul & The Wire.
                 </div>
 
                 <h2>Links</h2>
