@@ -39,10 +39,10 @@ const About = () => {
 
             <div className={styles.outer}>
                 <h2>About Me</h2>
-                <p>I'm currently a developer for the Ritchie Lab at the Perelman School of Medicine,
-                    and an MSE in Data Science student at University of Pennsylvania.
-                    I did my undergrad in Electrical & Computer Engineering at the University of Texas at Austin, and 
-                    my career interests are in machine learning.
+                <p>I'm currently in my final semester as a Master's in Data Science studnet at University of Pennsylvania
+                    and am currently looking for a full-time position. I did my undergrad in Electrical & Computer Engineering at the University of Texas at Austin,
+                    and my career interests are in software engineering & machine learning. My work & research experience has been in full-stack software engineering 
+                    machine learning, and data science.  
                 </p>
                 <br/>
                 <h2>Hobbies</h2>
@@ -53,12 +53,15 @@ const About = () => {
                 </div>
                 <div className={styles.indent}>
                     <b>Running: </b>
-                    I love long-distance running and recently completed my first marathon. I 
-		            aim to eventually visit new places all around the world to run races & triathlons.
+                    I love long-distance running and my next race is the Tokyo Marathon.
+                </div>
+                <div className={styles.indent}>
+                    <b>Travel: </b>
+                    I love visiting new places and my favorite places I've visited are Peru, Portugal, Jordan and Tunisia.
                 </div>
                 <div className={styles.indent}>
                     <b>Miscellaneous: </b>
-                    I recently started learning Argentine Tango. I'm also a huge fan of Better Call Saul & The Wire.
+                    I occasionally find time to practice Argentine Tango. I'm also a huge fan of Better Call Saul & The Wire.
                 </div>
 
                 <h2>Links</h2>
@@ -72,7 +75,7 @@ const About = () => {
                 <div className={styles.resume}>
                     <p>
                         <a 
-                            href="https://drive.google.com/file/d/1dPr1Hj8CNfP300VO97ZXWdyCaCipw897/view?usp=sharing"
+                            href="https://drive.google.com/file/d/1e0-n1ui8HTlsPx4WJGUatRz15-KjxXCi/view?usp=sharing"
                             target="_blank"
                         >
                             Resume
