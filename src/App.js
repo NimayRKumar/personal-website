@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
-
-import './App.css';
-import About from './components/About/About'
-
+import React, { Component } from 'react'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
+import 'bootstrap/dist/css/bootstrap.css'
+import './App.css';
+import Home from './pages/Home'
+import Misc from './pages/Misc'
 
 class App extends Component {
 
@@ -11,11 +11,12 @@ class App extends Component {
     return (
       <Router>
         <div className="App">
-          <Route exact path='/' component={About}/>
+          <Route exact path='/' component={Home}/>
+          <Route exact path='/misc' component={Misc}/>
         </div>
       </Router>
     )
   }
 }
 
-export default App;
+export default App
