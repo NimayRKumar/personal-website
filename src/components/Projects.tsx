@@ -1,4 +1,4 @@
-import { React, forwardRef } from 'react'
+import React, { forwardRef, ForwardedRef } from 'react'
 import { createUseStyles } from 'react-jss'
 import { Card, Col, Row } from 'react-bootstrap'
 import spec from '../media/proj/spectrogram.png'
@@ -52,7 +52,7 @@ const useStyles = createUseStyles({
   }
 })
 
-const Projects = forwardRef((props, ref) => {
+const Projects = forwardRef<HTMLDivElement, React.PropsWithChildren<{}>>((props, ref: ForwardedRef<HTMLDivElement>) => {
   const styles = useStyles()
 
   return (

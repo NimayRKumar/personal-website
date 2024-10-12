@@ -1,4 +1,4 @@
-import { React, forwardRef } from 'react'
+import React, { forwardRef, ForwardedRef } from 'react'
 import { createUseStyles } from 'react-jss'
 import Button from 'react-bootstrap/Button'
 import me from '../media/profile/long_hair.jpg'
@@ -42,11 +42,11 @@ const useStyles = createUseStyles({
   }
 })
 
-const openLink = (link) => {
+const openLink = (link: string) => {
   window.open(link, '_blank')
 }
 
-const About = forwardRef((props, ref) => {
+const About = forwardRef<HTMLDivElement, React.PropsWithChildren<{}>>((props, ref: ForwardedRef<HTMLDivElement>) => {
   const styles = useStyles()
   return (
     <div ref={ref}>

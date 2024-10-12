@@ -1,12 +1,12 @@
-import React, { useRef } from 'react'
+import React, { useRef, RefObject } from 'react'
 import { createUseStyles } from 'react-jss'
 import Nav from 'react-bootstrap/Nav' 
-import About from '../components/About.js'
-import Education from '../components/Education.js'
+import About from '../components/About'
+import Education from '../components/Education'
 import Work from '../components/Work'
-import Projects from '../components/Projects.js'
+import Projects from '../components/Projects'
 import { Link } from 'react-router-dom'
-import { AnimatedBackground } from 'animated-backgrounds';
+import { AnimatedBackground } from 'animated-backgrounds'
 
 const NAVBARHEIGHT = 60
 
@@ -38,14 +38,14 @@ const useStyles = createUseStyles({
   }
 })
 
-const Home = () => {
+const Home: React.FC = () => {
   const styles = useStyles()
   const aboutRef = useRef(null)
   const eduRef = useRef(null)
   const workRef = useRef(null)
   const projRef = useRef(null)
 
-  const scrollToElement = (targetRef) => {
+  const scrollToElement = (targetRef: RefObject<HTMLDivElement>) => {
     if (targetRef && targetRef.current) {
       const elementPosition = targetRef.current.getBoundingClientRect().top + window.scrollY
       const offsetPosition = elementPosition - NAVBARHEIGHT

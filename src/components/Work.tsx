@@ -1,4 +1,4 @@
-import { React, forwardRef } from 'react'
+import React, { forwardRef, ForwardedRef } from 'react'
 import { createUseStyles } from 'react-jss'
 import { Card } from 'react-bootstrap'
 import { workExp } from '../info/info.js'
@@ -28,7 +28,7 @@ const useStyles = createUseStyles({
   }
 })
 
-const Work = forwardRef((props, ref) => {
+const Work = forwardRef<HTMLDivElement, React.PropsWithChildren<{}>>((props, ref: ForwardedRef<HTMLDivElement>) => {
   const styles = useStyles()
   return (
     <div className={styles.outer} ref={ref}>

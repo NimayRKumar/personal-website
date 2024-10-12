@@ -1,4 +1,4 @@
-import { React, forwardRef } from 'react'
+import React, { forwardRef, ForwardedRef } from 'react'
 import { createUseStyles } from 'react-jss'
 
 const useStyles = createUseStyles({
@@ -14,7 +14,7 @@ const useStyles = createUseStyles({
 })
 
 
-const Education = forwardRef((props, ref) => {
+const Education = forwardRef<HTMLDivElement, React.PropsWithChildren<{}>>((props, ref: ForwardedRef<HTMLDivElement>) => {
   const styles = useStyles()
   return (
     <div className={styles.outer} ref={ref}>
