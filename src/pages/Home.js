@@ -1,10 +1,10 @@
-import { React, useRef } from 'react'
+import React, { useRef } from 'react'
 import { createUseStyles } from 'react-jss'
 import Nav from 'react-bootstrap/Nav' 
-import About from '../components/About'
-import Education from '../components/Education'
+import About from '../components/About.js'
+import Education from '../components/Education.js'
 import Work from '../components/Work'
-import Projects from '../components/Projects'
+import Projects from '../components/Projects.js'
 import { Link } from 'react-router-dom'
 import { AnimatedBackground } from 'animated-backgrounds';
 

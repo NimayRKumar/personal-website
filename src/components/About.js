@@ -1,6 +1,6 @@
 import { React, forwardRef } from 'react'
 import { createUseStyles } from 'react-jss'
-import {Card, Button } from 'react-bootstrap'
+import Button from 'react-bootstrap/Button'
 import me from '../media/profile/long_hair.jpg'
 
 const useStyles = createUseStyles({
@@ -8,6 +8,9 @@ const useStyles = createUseStyles({
     margin: 'auto',
     padding: '10px',
     width: '65%'
+  },
+  centered: {
+    textAlign: 'center'
   },
   card: {
     backgroundColor: 'rgba(0, 0, 0, 0.2)',
@@ -47,8 +50,8 @@ const About = forwardRef((props, ref) => {
   const styles = useStyles()
   return (
     <div ref={ref}>
-      <div align='center'>
-        <img src={me} className={styles.profile} width={'500'}/>
+      <div className={styles.centered}>
+        <img src={me} className={styles.profile} width={500} alt='profile'/>
         <h1><big>Nimay Kumar</big></h1>
       </div>
       <div className={styles.outer}>
@@ -70,7 +73,6 @@ const About = forwardRef((props, ref) => {
           <Button className={styles.button} variant={'dark'} onClick={() => openLink('https://www.linkedin.com/in/nimaykumar/')}>
             LinkedIn
           </Button>
-
         </div>
       </div>
     </div>

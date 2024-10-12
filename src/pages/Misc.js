@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import { createUseStyles } from 'react-jss'
 import { Card } from 'react-bootstrap'
 import { AnimatedBackground } from 'animated-backgrounds'
@@ -26,9 +25,9 @@ const useStyles = createUseStyles({
     marginBottom: '20px',
   },
   imageHover: {
-    transition: 'transform 0.3s ease', // Smooth transition for scaling
+    transition: 'transform 0.3s ease',
     '&:hover': {
-      transform: 'scale(1.1)', // Scale up the image on hover
+      transform: 'scale(1.1)'
     },
   },
 })
@@ -52,7 +51,7 @@ const Misc = () => {
 
   return (
     <div>
-      <AnimatedBackground animationName='starryNight'/>
+      <AnimatedBackground animationName='cosmicDust'/>
 
       <div className={styles.outer}>
         <Card className={styles.mainCard}>

@@ -16,6 +16,7 @@ const useStyles = createUseStyles({
   expCard: {
     marginTop: 25,
     marginBottom: 25,
+    color:' white',
     backgroundColor: 'rgba(0, 0, 0, 0.75)',
     border: '1px solid rgba(255, 255, 255, 0.2)',
     borderRadius: '5px'
