@@ -64,7 +64,7 @@ const About = forwardRef((props, ref) => {
         </p>
         <br/>
         <div className={styles.links}>
-          <Button className={styles.button} variant={'dark'} onClick={() => openLink('https://drive.google.com/file/d/1e0-n1ui8HTlsPx4WJGUatRz15-KjxXCi/view?usp=sharing')}>
+          <Button className={styles.button} variant={'dark'} onClick={() => openLink('https://drive.google.com/file/d/1katlJJ-juflK4aTQ53-22fS13Xps9Hwo/view?usp=sharing')}>
             Resume
           </Button>
           <Button className={styles.button} variant={'dark'} onClick={() => openLink('https://github.com/NimayRKumar')}>
