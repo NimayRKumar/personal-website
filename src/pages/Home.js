@@ -1,4 +1,4 @@
-import React, { useRef, RefObject } from 'react'
+import React, { useRef } from 'react'
 import { createUseStyles } from 'react-jss'
 import Nav from 'react-bootstrap/Nav' 
 import About from '../components/About'
@@ -38,14 +38,14 @@ const useStyles = createUseStyles({
   }
 })
 
-const Home: React.FC = () => {
+const Home= () => {
   const styles = useStyles()
   const aboutRef = useRef(null)
   const eduRef = useRef(null)
   const workRef = useRef(null)
   const projRef = useRef(null)
 
-  const scrollToElement = (targetRef: RefObject<HTMLDivElement>) => {
+  const scrollToElement = (targetRef) => {
     if (targetRef && targetRef.current) {
       const elementPosition = targetRef.current.getBoundingClientRect().top + window.scrollY
       const offsetPosition = elementPosition - NAVBARHEIGHT
