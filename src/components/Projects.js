@@ -144,6 +144,8 @@ const Projects = forwardRef((props, ref) => {
             <Card.Body>
               A few friends and I made a website for visualizing Olympic games stats by country. We scraped the data in Python using pyspider
               and BeautifulSoup to format into JSON files, which we stored on MongoDB, and used Google GeoCharts to visualize it over a world map.
+              Challenges in this project involved learning about XML and dealing with messy and unformatted data scraped from the web.
+              <br/>
             </Card.Body>
           </Card>
         </Col>
