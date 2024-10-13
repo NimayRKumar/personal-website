@@ -197,7 +197,7 @@ const Projects = forwardRef<HTMLDivElement, React.PropsWithChildren<{}>>((props,
               a force-directed graph that we made using D3.js.
               <br/>
               <br/>
-              Take a look at our visualization tool <a  className={styles.link} href='https://nimayrkumar.github.io/bball-dgraph/index.html' target='_blank'>here</a> and check out our article on TowardsDataScience <a href='https://towardsdatascience.com/insights-from-raw-nba-shot-log-data-and-an-exploration-of-the-hot-hand-phenomenon-1f1c6c63685a' target='_blank'>here</a>,
+              Take a look at our visualization tool <a  className={styles.link} href='https://nimayrkumar.github.io/bball-dgraph/index.html' target='_blank'>here</a> and check out our article on TowardsDataScience <a className={styles.link} href='https://towardsdatascience.com/insights-from-raw-nba-shot-log-data-and-an-exploration-of-the-hot-hand-phenomenon-1f1c6c63685a' target='_blank'>here</a>,
               which was also <a  className={styles.link} href='https://towardsdatascience.com/february-edition-data-visualization-18e1b663edc4' target='_blank'>highlighted</a> by TowardsDataScience as a standout for data visualization.
             </Card.Body>
           </Card>
