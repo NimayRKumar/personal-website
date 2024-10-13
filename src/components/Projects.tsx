@@ -1,4 +1,5 @@
 import React, { forwardRef, ForwardedRef } from 'react'
+import { useTheme } from './ThemeToggle'
 import { createUseStyles } from 'react-jss'
 import { Card, Col, Row } from 'react-bootstrap'
 import spec from '../media/proj/spectrogram.png'
@@ -17,15 +18,18 @@ const useStyles = createUseStyles({
     width: '65%',
   },
   cardHeader: {
-    backgroundColor: '#001f3f',
-    fontWeight: 'bold'
+    backgroundColor: (themeStyles: any) => themeStyles.cardHeader.backgroundColor,
+    color: (themeStyles: any) => themeStyles.textColor,
+    fontWeight: 'bold',
+    borderRadius: '10px'
   },
   expCard: {
+    backgroundColor: (themeStyles: any) => themeStyles.card.backgroundColor,
+    color: (themeStyles: any) => themeStyles.textColor,
+    border: (themeStyles: any) => themeStyles.card.border,
+    borderRadius: '5px',
     marginTop: 25,
     marginBottom: 25,
-    color:' white',
-    backgroundColor: 'rgba(0, 0, 0, 0.75)',
-    border: '2px solid rgba(255, 255, 255, 0.2)'
   },
   expHeader: {
     display: 'flex',
@@ -39,7 +43,7 @@ const useStyles = createUseStyles({
   projImg: {
     width: 225,
     height: 225,
-    border: '2px solid rgba(255, 255, 255, 0.2)',
+    border: (themeStyles: any) => themeStyles.card.border,
     borderRadius: 5
   },
   link: {
@@ -53,8 +57,9 @@ const useStyles = createUseStyles({
 })
 
 const Projects = forwardRef<HTMLDivElement, React.PropsWithChildren<{}>>((props, ref: ForwardedRef<HTMLDivElement>) => {
-  const styles = useStyles()
-
+  const { themeStyles } = useTheme()
+  const styles = useStyles(themeStyles)
+  
   return (
     <div className={styles.outer} ref={ref}>
       <h2>Research & Projects</h2>

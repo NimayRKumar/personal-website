@@ -1,8 +1,10 @@
 import React, { forwardRef, ForwardedRef } from 'react'
+import { useTheme } from './ThemeToggle'
 import { createUseStyles } from 'react-jss'
 
 const useStyles = createUseStyles({
   outer: {
+    color: (themeStyles: any) => themeStyles.textColor,
     margin: 'auto',
     padding: '10px',
     width: '65%',
@@ -15,7 +17,9 @@ const useStyles = createUseStyles({
 
 
 const Education = forwardRef<HTMLDivElement, React.PropsWithChildren<{}>>((props, ref: ForwardedRef<HTMLDivElement>) => {
-  const styles = useStyles()
+  const { themeStyles } = useTheme()
+  const styles = useStyles(themeStyles)
+
   return (
     <div className={styles.outer} ref={ref}>
       <h2>Education</h2>

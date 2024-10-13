@@ -7,6 +7,7 @@ import Work from '../components/Work'
 import Projects from '../components/Projects'
 import { Link } from 'react-router-dom'
 import { AnimatedBackground } from 'animated-backgrounds'
+import ThemeToggle, { useTheme } from '../components/ThemeToggle'
 
 const NAVBARHEIGHT = 60
 
@@ -16,15 +17,15 @@ const useStyles = createUseStyles({
     top: 0,
     height: NAVBARHEIGHT,
     width: '100vw',
-    backgroundColor: 'black',
-    zIndex: 1,
+    backgroundColor: (themeStyles: any) => themeStyles.nav,
+    zIndex: 2,
     paddingTop: '10px',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
   },
   navlink: {
-    color: 'white',
+    color: (themeStyles: any) => themeStyles.textColor,
     fontSize: '18px', 
     fontWeight: 'bold',
     padding: '0 20px',
@@ -34,12 +35,13 @@ const useStyles = createUseStyles({
     '&:hover': { color: '#70b7e0' },
   },
   content: {
-    marginTop: 70
+    marginTop: NAVBARHEIGHT + 10
   }
 })
 
 const Home: React.FC = () => {
-  const styles = useStyles()
+  const { themeStyles } = useTheme()
+  const styles = useStyles(themeStyles)
   const aboutRef = useRef(null)
   const eduRef = useRef(null)
   const workRef = useRef(null)
@@ -55,8 +57,7 @@ const Home: React.FC = () => {
 
   return (
     <div>
-      <AnimatedBackground animationName='neuralNetwork' style={{opacity: .5}}/>
-
+      <AnimatedBackground animationName={themeStyles.animation} style={themeStyles.animationStyle}/>
       <div>
         <Nav activeKey='/home' className={styles.navbar}>
           <Nav.Item>
@@ -73,7 +74,8 @@ const Home: React.FC = () => {
           </Nav.Item> 
           <Nav.Item>
             <Nav.Link className={styles.navlink} as={Link} to='/misc'> Fun Stuff </Nav.Link>
-          </Nav.Item>         
+          </Nav.Item>   
+          <ThemeToggle/>      
         </Nav>
       </div>
       <div className={styles.content}>

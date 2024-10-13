@@ -1,7 +1,8 @@
-import React, { forwardRef, ForwardedRef } from 'react'
+import React, { forwardRef, ForwardedRef, useContext } from 'react'
 import { createUseStyles } from 'react-jss'
 import Button from 'react-bootstrap/Button'
 import me from '../media/profile/long_hair.jpg'
+import { useTheme } from './ThemeToggle'  // Import ThemeContext
 
 const useStyles = createUseStyles({
   outer: {
@@ -13,7 +14,7 @@ const useStyles = createUseStyles({
     textAlign: 'center'
   },
   card: {
-    backgroundColor: 'rgba(0, 0, 0, 0.2)',
+    backgroundColor: (themeStyles: any) => themeStyles.card.backgroundColor,
     border: 'none',
     borderRadius: '10px'
   },
@@ -31,7 +32,8 @@ const useStyles = createUseStyles({
     marginBottom: 10
   },
   button: {
-    backgroundColor: '#001f3f',
+    backgroundColor: (themeStyles: any) => themeStyles.button.backgroundColor,
+    color: (themeStyles: any) => themeStyles.textColor,
     marginLeft: 50,
     marginRight: 50,
     transition: 'background-color 0.3s, transform 0.3s',
@@ -47,16 +49,18 @@ const openLink = (link: string) => {
 }
 
 const About = forwardRef<HTMLDivElement, React.PropsWithChildren<{}>>((props, ref: ForwardedRef<HTMLDivElement>) => {
-  const styles = useStyles()
+  const { themeStyles } = useTheme()
+  const styles = useStyles(themeStyles)
+
   return (
     <div ref={ref}>
       <div className={styles.centered}>
         <img src={me} className={styles.profile} width={500} alt='profile'/>
-        <h1><big>Nimay Kumar</big></h1>
+        <h1 style={{color: themeStyles.textColor}}><big>Nimay Kumar</big></h1>
       </div>
       <div className={styles.outer}>
-        <h2>About Me</h2>
-        <p>
+        <h2 style={{color: themeStyles.textColor}}>About Me</h2>
+        <p style={{color: themeStyles.textColor}}>
           I'm currently in my final semester of my Data Science Master's at University of Pennsylvania and am looking for a full-time position. I did my undergrad in 
           Electrical & Computer Engineering at the University of Texas at Austin, and my career interests are in machine learning engineering and software engineering. 
           My research experience at Penn has been in machine learning, and my 4 years of work experience has been in full-stack software engineering. 
