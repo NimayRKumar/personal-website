@@ -2,8 +2,8 @@ import React, { Component } from 'react'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.css'
 import './App.css';
-import Home from './pages/Home.js'
-import Misc from './pages/Misc.js'
+import Home from './pages/Home'
+import Misc from './pages/Misc'
 
 class App extends Component {
 

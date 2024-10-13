@@ -1,7 +1,8 @@
 import React, { forwardRef, ForwardedRef } from 'react'
 import { createUseStyles } from 'react-jss'
 import { Card } from 'react-bootstrap'
-import { workExp } from '../info/info.js'
+import { workExp } from '../util/workUtils'
+
 const useStyles = createUseStyles({
   outer: {
     margin: 'auto',

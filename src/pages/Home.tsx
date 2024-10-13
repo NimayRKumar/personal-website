@@ -38,14 +38,14 @@ const useStyles = createUseStyles({
   }
 })
 
-const Home= () => {
+const Home: React.FC = () => {
   const styles = useStyles()
   const aboutRef = useRef(null)
   const eduRef = useRef(null)
   const workRef = useRef(null)
   const projRef = useRef(null)
 
-  const scrollToElement = (targetRef) => {
+  const scrollToElement = (targetRef: React.RefObject<HTMLDivElement>) => {
     if (targetRef && targetRef.current) {
       const elementPosition = targetRef.current.getBoundingClientRect().top + window.scrollY
       const offsetPosition = elementPosition - NAVBARHEIGHT
@@ -57,7 +57,7 @@ const Home= () => {
     <div>
       <AnimatedBackground animationName='neuralNetwork' style={{opacity: .5}}/>
 
-      <div className={styles.sidebar}>
+      <div>
         <Nav activeKey='/home' className={styles.navbar}>
           <Nav.Item>
             <Nav.Link onClick={() => scrollToElement(aboutRef)} className={styles.navlink}> About Me </Nav.Link>

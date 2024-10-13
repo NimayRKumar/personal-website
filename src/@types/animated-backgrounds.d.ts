@@ -1,4 +1,8 @@
 declare module 'animated-backgrounds' {
-  const AnimatedBackground: any;
-  export default AnimatedBackground
+  interface AnimatedBackgroundProps {
+    animationName: string;
+    style?: React.CSSProperties;
+  }
+
+  export const AnimatedBackground: React.FC<AnimatedBackgroundProps>;
 }
