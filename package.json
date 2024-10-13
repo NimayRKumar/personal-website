@@ -1,6 +1,7 @@
 {
   "name": "website",
   "version": "0.1.0",
+  "main": "src/index.tsx",
   "private": true,
   "engines": {
     "node": "16.18.0"
