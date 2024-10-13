@@ -32,7 +32,7 @@ const useStyles = createUseStyles({
     letterSpacing: '1px',
     textTransform: 'uppercase',
     transition: 'color 0.3s',
-    '&:hover': { color: '#70b7e0' },
+    '&:hover': { color: (themeStyles: any) => themeStyles.navHover }
   },
   content: {
     marginTop: NAVBARHEIGHT + 10

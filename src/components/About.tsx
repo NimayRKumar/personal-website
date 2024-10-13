@@ -38,7 +38,7 @@ const useStyles = createUseStyles({
     marginRight: 50,
     transition: 'background-color 0.3s, transform 0.3s',
     '&:hover': {
-      backgroundColor: '#0056b3',
+      backgroundColor: (themeStyles: any) => themeStyles.button.hoverBackgroundColor,
       transform: 'scale(1.1)'
     }
   }
