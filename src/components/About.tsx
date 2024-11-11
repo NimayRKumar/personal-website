@@ -68,7 +68,7 @@ const About = forwardRef<HTMLDivElement, React.PropsWithChildren<{}>>((props, re
         </p>
         <br/>
         <div className={styles.links}>
-          <Button className={styles.button} variant={'dark'} onClick={() => openLink('https://drive.google.com/file/d/1katlJJ-juflK4aTQ53-22fS13Xps9Hwo/view?usp=sharing')}>
+          <Button className={styles.button} variant={'dark'} onClick={() => openLink('https://drive.google.com/file/d/1z313_91s7EQpbyu-5e0tz1TjLYaGNBCL/view?usp=drive_link')}>
             Resume
           </Button>
           <Button className={styles.button} variant={'dark'} onClick={() => openLink('https://github.com/NimayRKumar')}>
