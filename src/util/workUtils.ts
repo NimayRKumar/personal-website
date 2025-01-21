@@ -1,6 +1,6 @@
 export const workExp = [
   {
-    position: 'Software Developer II',
+    position: 'Software Developer',
     company: 'Institute of Biomedical Informatics - Ritchie Lab at Penn Medicine',
     dates: 'June 2022 - October 2024',
     bullets: [
