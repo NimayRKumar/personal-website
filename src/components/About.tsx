@@ -61,7 +61,7 @@ const About = forwardRef<HTMLDivElement, React.PropsWithChildren<{}>>((props, re
       <div className={styles.outer}>
         <h2 style={{color: themeStyles.textColor}}>About Me</h2>
         <p style={{color: themeStyles.textColor}}>
-          I'm currently in my final semester of my Data Science Master's at University of Pennsylvania and am looking for a full-time position. I did my undergrad in 
+          I recently graduated from University of Pennsylvania with my Masters in Data Science and am looking for a full-time position. I did my undergrad in 
           Electrical & Computer Engineering at the University of Texas at Austin, and my career interests are in machine learning engineering and software engineering. 
           My research experience at Penn has been in machine learning, and my 4 years of work experience has been in full-stack software engineering. 
           In my free time I enjoy running, practicing cello, travelling, and occasionally dancing Argentine tango. 
